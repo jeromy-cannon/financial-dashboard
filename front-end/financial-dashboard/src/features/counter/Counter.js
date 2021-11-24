@@ -7,11 +7,14 @@ import {
   incrementAsync,
   incrementIfOdd,
   selectCount,
+  selectStatus,
+  resetToDefault,
 } from './counterSlice';
 import styles from './Counter.module.css';
 
 export function Counter() {
   const count = useSelector(selectCount);
+  const counterStatus = useSelector(selectStatus);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
 
@@ -35,6 +38,7 @@ export function Counter() {
         >
           +
         </button>
+        <span className={styles.value}>{counterStatus}</span>
       </div>
       <div className={styles.row}>
         <input
@@ -60,6 +64,12 @@ export function Counter() {
           onClick={() => dispatch(incrementIfOdd(incrementValue))}
         >
           Add If Odd
+        </button>
+        <button
+          className={styles.button}
+          onClick={() => dispatch(resetToDefault())}
+        >
+          Reset to Default
         </button>
       </div>
     </div>
