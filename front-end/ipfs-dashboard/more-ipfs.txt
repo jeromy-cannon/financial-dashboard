@@ -1,0 +1,17 @@
+
+install using go through powershell  (or download and install...)
+ipfs init
+ipfs cat <readme listed through init>
+ipfs daemon
+ipfs swarm peers
+ipfs id
+
+http://localhost:5001/webui
+
+ipfs add hello-ipfs.txt
+# creates an alias for webui to leverage, making it easier to keep track of the files you have uploaded
+ipfs files cp /ipfs/Qmf31Bq8ooYbMmqQvg1FNGnnyfFg42jPEXDLjVRfydS8SB /hello-ipfs.txt
+
+#will upload a directory and its contents, also the directory itself has a hash value that can be leveraged
+ipfs add -r <dirname>
+

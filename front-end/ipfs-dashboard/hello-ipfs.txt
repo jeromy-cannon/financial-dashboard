@@ -1,0 +1,18 @@
+install using go through powershell  (or download and install...)
+ipfs init
+ipfs cat <readme listed through init>
+ipfs daemon
+ipfs swarm peers
+ipfs id
+
+http://localhost:5001/webui
+
+ipfs add hello-ipfs.txt
+ipfs cat <hash value>
+https://gateway.ipfs.io/ipfs/<hash-value>
+ipfs open hello-ipfs.txt
+
+https://gateway.ipfs.io/ipfs/Qmf31Bq8ooYbMmqQvg1FNGnnyfFg42jPEXDLjVRfydS8SB
+https://ipfs.io/ipfs/Qmf31Bq8ooYbMmqQvg1FNGnnyfFg42jPEXDLjVRfydS8SB
+
+updated...
